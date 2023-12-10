@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-box{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.Content-box{
+    width: 50%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Title{
+    font-size: 32px;
+}
+form{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input-1-box,.input-2-box,.input-3-box{
+    display: flex;
+    flex-direction: column;
+}
+#input1,#input2,#input3{
+    padding:10px;
+    border-radius: 14px;
+    border-color: gainsboro;
+}
+label{
+    font-size: 16px;
+}
+.checkbox-box{
+    display: flex;
+}
+.checkbox-text{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.btn{
+    height: 40px;
+    background-color: rgb(58,92,34);
+    color: white;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.btn:hover{
+    color: rgb(58,92,34);
+    background-color: white;
+    border: 1px solid rgb(58,92,34);
+}
+.Or-text{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 100;
+}
+.sign-with-box{
+    display: flex;
+    justify-content: space-around;
+}
+.sign-with-google , .sign-with-Apple{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 45%;
+    border-radius: 14px;
+    border:2px solid gainsboro
+}
+.have-an-account{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.have-an-account-link{
+    text-decoration: none;
+    color:#302ce9;
+}
+@media screen and (max-width:1300px){
+    .container{
+        padding: 1rem;
+    }
+}
+@media screen and (max-width:998px){
+    .img-box{
+        display: none;
+    }
+    section{
+        background-image: url(images\ \(1\).jfif);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        justify-content: center;
+    }
+    .Content-box{
+        width: 100%;
+        background-color:rgba(0, 128, 0, 0.589);
+    }
+    .container{
+        padding: 1rem 4rem;
+    }
+}
+@media screen and (max-width:500px){
+    .container{
+        padding:0.5rem;
+    }
+    .sign-with-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign-with-google , .sign-with-Apple{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .Title{
+        font-size: 20px;
+    }
+    .Title,label,.checkbox-text,.Or-text,.sign-with-box,.have-an-account{
+        color: white;
+    }
+    .have-an-account-link{
+        color: black;
+    }
+}
