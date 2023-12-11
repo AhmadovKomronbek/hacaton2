@@ -130,12 +130,22 @@ label{
         background-color:rgba(0, 128, 0, 0.589);
     }
     .container{
-        padding: 1rem 4rem;
+        padding: 4rem 4rem;
+    }
+    .Title,label,.checkbox-text,.Or-text,.sign-with-box,.have-an-account{
+        color: white;
+    }
+    .have-an-account-link{
+        color: black;
+    }
+    .btn{
+        background-color: white;
+        color: rgb(58,92,34);
     }
 }
 @media screen and (max-width:500px){
     .container{
-        padding:0.5rem;
+        padding:1rem 0.5rem;
     }
     .sign-with-box{
         flex-direction: column;
@@ -148,10 +158,7 @@ label{
     .Title{
         font-size: 20px;
     }
-    .Title,label,.checkbox-text,.Or-text,.sign-with-box,.have-an-account{
-        color: white;
-    }
-    .have-an-account-link{
-        color: black;
+    .Or-text{
+        height: 5%;
     }
 }
