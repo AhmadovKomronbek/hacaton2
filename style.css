@@ -145,7 +145,7 @@ label{
 }
 @media screen and (max-width:500px){
     .container{
-        padding:1rem 0.5rem;
+        padding:5rem 0.5rem;
     }
     .sign-with-box{
         flex-direction: column;
@@ -160,5 +160,8 @@ label{
     }
     .Or-text{
         height: 5%;
+    }
+    form{
+        height: 50%;
     }
 }
